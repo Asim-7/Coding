@@ -1,0 +1,23 @@
+/* PROGRAM TO CHECK WHETHER A NUMBER IS PRIME NUMBER OR NOT */
+
+#include <iostream.h>
+#include <conio.h>
+void num(int n)
+{
+int c=0;
+for(int a=2;a<n;a++)
+	if(n%a==0)
+   	c=1;
+   if(c==0)
+   	cout<<"The number is prime number";
+   else
+   	cout<<"The number is not prime number";
+      }
+void main()
+{
+int b;
+cout<<"Enter a number: ";
+cin>>b;
+num(b);
+getch();
+}
